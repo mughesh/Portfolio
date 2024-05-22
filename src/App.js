@@ -13,6 +13,7 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import FluidParticles from "./components/FluidParticles";  // Import the new component
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -32,6 +33,7 @@ function App() {
     <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <FluidParticles />  {/* Add the FluidParticles component here */}
         <Navbar />
         <ScrollToTop />
         <Routes>
