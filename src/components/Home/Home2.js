@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar_me.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import "./Home2.css"; // Ensure this path matches your project structure
 
 function Home2() {
   return (
@@ -54,7 +55,9 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <div className="avatar-container">
+                <img src={myImg} className="img-fluid" alt="avatar" />
+              </div>
             </Tilt>
           </Col>
         </Row>
@@ -112,4 +115,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
