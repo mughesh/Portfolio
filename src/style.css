@@ -741,3 +741,69 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* Experience Section */
+.experience-section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  background-image: var(--section-background-color);
+}
+
+.experience-card {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: auto;
+}
+
+.experience-card-view {
+  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+  color: white;
+  background-color: transparent;
+  opacity: 0.9;
+  transition: all 0.5s ease 0s;
+  height: 100%;
+}
+
+.experience-card-view:hover {
+  transform: scale(1.02);
+  overflow: hidden;
+  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
+}
+
+.experience-heading {
+  color: white;
+  font-size: 2.3em;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.experience-card-text {
+  color: white;
+}
+
+.experience-date {
+  color: #7e7e7e;
+}
+
+.experience-employer {
+  color: #b6b6b6;
+}
+
+.experience-description {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .experience-card {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: auto;
+  }
+}
+
+
